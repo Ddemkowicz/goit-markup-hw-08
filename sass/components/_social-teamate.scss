@@ -1,0 +1,21 @@
+.social-teamate {
+  display: flex;
+  justify-content: space-around;
+
+  &__svg {
+    background-color: #ffffff;
+    fill: #afb1b8;
+    width: 44px;
+    height: 44px;
+    background-position: 12px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: #2196f3;
+      fill: #ffffff;
+      transition: all 0.2s;
+    }
+  }
+}

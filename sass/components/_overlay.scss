@@ -1,0 +1,20 @@
+.overlay {
+  width: 370px;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+  position: absolute;
+  top: 300px;
+
+  &__discription {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    padding: 49px 45px 49px 24px;
+  }
+}
+.portfolio__project:hover .overlay {
+  animation: hoverOverlay 250ms cubic-bezier(0.4, 0, 0.2, 1) normal both;
+}

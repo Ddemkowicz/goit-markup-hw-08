@@ -1,0 +1,35 @@
+.activities {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    position: relative;
+    width: 370px;
+    height: 294px;
+  }
+  &__discription {
+    background: rgba(47, 48, 58, 0.8);
+    color: #ffffff;
+    width: inherit;
+    height: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 27px;
+    position: absolute;
+    bottom: 0;
+  }
+}
