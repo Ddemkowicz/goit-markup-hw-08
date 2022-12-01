@@ -3,25 +3,25 @@
       rgba(47, 48, 58, 0.4),
       rgba(255, 255, 255, 0.1)
     ),
-    url(../images/Tlo2-index-section1.jpg);
+    url("/images/mobile-img/banner-bg.jpg");
 
-  background-size: auto, auto;
+  background-size: cover;
   background-position: center, center;
   color: #ffffff;
   text-align: center;
-  max-width: 1600px;
-  margin: auto;
+  width: 100%;
+  height: 400px;
+
   padding: 0 15px;
 
   &__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    width: 696px;
-    height: 320px;
+    font-size: 26px;
+    line-height: 1.615;
+    max-width: 365px;
     letter-spacing: 0.06em;
     margin: 0 auto;
-    padding-top: 200px;
+    padding-top: 118px;
     margin-bottom: 30px;
   }
   &__button {
@@ -35,7 +35,78 @@
     height: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-style: none;
-    margin-bottom: 200px;
+    margin-bottom: 118px;
     cursor: pointer;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(255, 255, 255, 0.1)
+      ),
+      url("/images/mobile-img/banner-bg@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .banner {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(255, 255, 255, 0.1)
+      ),
+      url("/images/tablet-img/banner-tablet-bg.jpg");
+    min-width: 768px;
+    background-size: cover;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .banner {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(255, 255, 255, 0.1)
+        ),
+        url("/images/tablet-img/banner-tablet-bg@2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .banner {
+      // justify-content: center;
+      margin: 0 auto;
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(255, 255, 255, 0.1)
+        ),
+        url("/images/desktop-img/desktop-banner.jpg");
+      background-size: cover;
+      max-width: 1600px;
+      height: 600px;
+
+      &__title {
+        font-size: 44px;
+        line-height: 1.36;
+        max-width: 696px;
+        height: 320px;
+
+        padding-top: 200px;
+      }
+      &__button {
+        margin-bottom: 200px;
+      }
+    }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .banner {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(255, 255, 255, 0.1)
+          ),
+          url("/images/desktop-img/desktop-banner@2x.jpg");
+      }
+    }
   }
 }

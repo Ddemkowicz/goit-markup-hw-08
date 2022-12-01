@@ -13,6 +13,21 @@
     font-size: 16px;
     line-height: 1.19;
     color: #757575;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .teamate {
+    &__img {
+      width: 354px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .teamate {
+    &__img {
+      width: 270px;
+      height: 260px;
+    }
   }
 }

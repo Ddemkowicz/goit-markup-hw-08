@@ -20,6 +20,32 @@
   </head>
   <body>
     <header class="style-head">
+      <div class="mobile-header container">
+        <a class="logo logo-header" href="#"
+          >Web<span class="logo-header--color">Studio</span></a
+        >
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="menu-toggle__svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+      </div>
       <div class="header">
         <a class="logo logo-header" href="#"
           >Web<span class="logo-header--color">Studio</span></a
@@ -68,7 +94,7 @@
                   href="./images/icons.svg#icon-smartphone"
                 ></use>
               </svg>
-              +48 111 111 111
+              +48&nbsp;111&nbsp;111&nbsp;111
             </a>
           </li>
         </ul>
@@ -76,9 +102,7 @@
     </header>
     <main>
       <section class="banner">
-        <h1 class="banner__title">
-          EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
-        </h1>
+        <h1 class="banner__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
         <button class="banner__button" type="button" data-modal-open>
           Zamów usługe
         </button>
@@ -89,13 +113,7 @@
             <li>
               <figure class="topics__item">
                 <svg class="topics__svg">
-                  <use
-                    x="100"
-                    y="25"
-                    width="70"
-                    height="70"
-                    href="./images/icons.svg#icon-antenna-1"
-                  ></use>
+                  <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
                 <figcaption>
                   <h4 class="topics__headline">LOREM IPSUM</h4>
@@ -109,13 +127,7 @@
             <li>
               <figure class="topics__item">
                 <svg class="topics__svg">
-                  <use
-                    x="100"
-                    y="25"
-                    width="70"
-                    height="70"
-                    href="./images/icons.svg#icon-clock-1"
-                  ></use>
+                  <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
                 <figcaption>
                   <h4 class="topics__headline">LOREM IPSUM</h4>
@@ -129,13 +141,7 @@
             <li>
               <figure class="topics__item">
                 <svg class="topics__svg">
-                  <use
-                    x="100"
-                    y="25"
-                    width="70"
-                    height="70"
-                    href="./images/icons.svg#icon-diagram-1"
-                  ></use>
+                  <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
                 <figcaption>
                   <h4 class="topics__headline">LOREM IPSUM</h4>
@@ -149,13 +155,7 @@
             <li>
               <figure class="topics__item">
                 <svg class="topics__svg">
-                  <use
-                    x="100"
-                    y="25"
-                    width="70"
-                    height="70"
-                    href="./images/icons.svg#icon-astronaut-1"
-                  ></use>
+                  <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
                 <figcaption>
                   <h4 class="topics__headline">LOREM IPSUM</h4>
@@ -173,12 +173,20 @@
           <ul class="activities__list list-style">
             <li>
               <div class="activities__item">
-                <img
-                  src="./images/Czym1.jpg"
-                  alt="Czym się zajmujemy 1"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./images/desktop-img/activities-1.jpg    370w,
+                      ./images/desktop-img/activities-1@2x.jpg 740w
+                    "
+                    sizes="(min-width:1200px) 370px, 100vw" />
+                  <img
+                    src="./images/desktop-img/activities-1.jpg"
+                    alt="Czym się zajmujemy 1"
+                    width="370"
+                    height="294"
+                /></picture>
                 <div class="activities__discription">
                   <h4>Aplikacje komputerowe</h4>
                 </div>
@@ -186,12 +194,20 @@
             </li>
             <li>
               <div class="activities__item">
-                <img
-                  src="./images/Czym2.jpg"
-                  alt="Czym się zajmujemy 2"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./images/desktop-img/activities-2.jpg    370w,
+                      ./images/desktop-img/activities-2@2x.jpg 740w
+                    "
+                    sizes="(min-width:1200px) 370px, 100vw" />
+                  <img
+                    src="./images/desktop-img/activities-2.jpg"
+                    alt="Czym się zajmujemy 2"
+                    width="370"
+                    height="294"
+                /></picture>
                 <div class="activities__discription">
                   <h4>Aplikacje mobilne</h4>
                 </div>
@@ -199,12 +215,20 @@
             </li>
             <li>
               <div class="activities__item">
-                <img
-                  src="./images/Czym3.jpg"
-                  alt="Czym się zajmujemy 3"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./images/desktop-img/activities-3.jpg    370w,
+                      ./images/desktop-img/activities-3@2x.jpg 740w
+                    "
+                    sizes="(min-width:1200px) 370px, 100vw" />
+                  <img
+                    src="./images/desktop-img/activities-3.jpg"
+                    alt="Czym się zajmujemy 3"
+                    width="370"
+                    height="294"
+                /></picture>
                 <div class="activities__discription">
                   <h4>Rozwiązania graficzne</h4>
                 </div>
@@ -214,17 +238,39 @@
         </div>
       </section>
       <div class="our-team">
-        <section class=" container section-style">
+        <section class="container section-style">
           <h2 class="our-team__title">Nasz zespół</h2>
           <ul class="our-team__list list-style">
             <li class="our-team__item">
               <figure class="teamate">
-                <img
-                  src="./images/Nasz1.jpg"
-                  alt="Product Desinger"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1200px )"
+                    srcset="
+                      ./images/desktop-img/desktop-teamate-1.jpg    270w,
+                      ./images/desktop-img/desktop-teamate-1@2x.jpg 540w
+                    "
+                    sizes="(min-width:1200px) 270px, 100vw" />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images/tablet-img/tablet-teamate-1.jpg    354w,
+                      ./images/tablet-img/tablet-teamate-1@2x.jpg 708w
+                    "
+                    sizes="(min-width:768px) 354px, 100vw" />
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./images/mobile-img/mobile-teamate-1.jpg    450w,
+                      ./images/mobile-img/mobile-teamate-1@2x.jpg 900w
+                    "
+                    sizes="(max-width:767px) 450px, 100vw" />
+
+                  <img
+                    class="teamate__img"
+                    src="./images/mobile-img/mobile-teamate-1.jpg"
+                    alt="Product Desinger"
+                /></picture>
                 <figcaption>
                   <h3 class="teamate__name">John Doe</h3>
                   <p class="teamate__discription">Product Desinger</p>
@@ -279,12 +325,33 @@
             </li>
             <li class="our-team__item">
               <figure class="teamate">
-                <img
-                  src="./images/Nasz2.jpg"
-                  alt="Frontend Developer"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1200px )"
+                    srcset="
+                      ./images/desktop-img/desktop-teamate-2.jpg    270w,
+                      ./images/desktop-img/desktop-teamate-2@2x.jpg 540w
+                    "
+                    sizes="(min-width:1200px) 270px, 100vw" />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images/tablet-img/tablet-teamate-2.jpg    354w,
+                      ./images/tablet-img/tablet-teamate-2@2x.jpg 708w
+                    "
+                    sizes="(min-width:768px) 354px, 100vw" />
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./images/mobile-img/mobile-teamate-2.jpg    450w,
+                      ./images/mobile-img/mobile-teamate-2@2x.jpg 900w
+                    "
+                    sizes="(max-width:767px) 450px, 100vw" />
+                  <img
+                    class="teamate__img"
+                    src="./images/mobile-img/mobile-teamate-2.jpg"
+                    alt="Frontend Developer"
+                /></picture>
                 <figcaption>
                   <h3 class="teamate__name">John Doe</h3>
                   <p class="teamate__discription">Frontend Developer</p>
@@ -339,12 +406,33 @@
             </li>
             <li class="our-team__item">
               <figure class="teamate">
-                <img
-                  src="./images/Nasz3.jpg"
-                  alt="Marketing"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1200px )"
+                    srcset="
+                      ./images/desktop-img/desktop-teamate-3.jpg    270w,
+                      ./images/desktop-img/desktop-teamate-3@2x.jpg 540w
+                    "
+                    sizes="(min-width:1200px) 270px, 100vw" />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images/tablet-img/tablet-teamate-3.jpg    354w,
+                      ./images/tablet-img/tablet-teamate-3@2x.jpg 708w
+                    "
+                    sizes="(min-width:768px) 354px, 100vw" />
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./images/mobile-img/mobile-teamate-3.jpg    450w,
+                      ./images/mobile-img/mobile-teamate-3@2x.jpg 900w
+                    "
+                    sizes="(max-width:767px) 450px, 100vw" />
+                  <img
+                    class="teamate__img"
+                    src="./images/mobile-img/mobile-teamate-3.jpg"
+                    alt="Marketing"
+                /></picture>
                 <figcaption>
                   <h3 class="teamate__name">John Doe</h3>
                   <p class="teamate__discription">Marketing</p>
@@ -399,12 +487,33 @@
             </li>
             <li class="our-team__item">
               <figure class="teamate">
-                <img
-                  src="./images/Nasz4.jpg"
-                  alt="UI Designer"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1200px )"
+                    srcset="
+                      ./images/desktop-img/desktop-teamate-4.jpg    270w,
+                      ./images/desktop-img/desktop-teamate-4@2x.jpg 540w
+                    "
+                    sizes="(min-width:1200px) 270px, 100vw" />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images/tablet-img/tablet-teamate-4.jpg    354w,
+                      ./images/tablet-img/tablet-teamate-4@2x.jpg 708w
+                    "
+                    sizes="(min-width:768px) 354px, 100vw" />
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./images/mobile-img/mobile-teamate-4.jpg    450w,
+                      ./images/mobile-img/mobile-teamate-4@2x.jpg 900w
+                    "
+                    sizes="(max-width:767px) 450px, 100vw" />
+                  <img
+                    class="teamate__img"
+                    src="./images/mobile-img/mobile-teamate-4.jpg"
+                    alt="UI Designer"
+                /></picture>
                 <figcaption>
                   <h3 class="teamate__name">John Doe</h3>
                   <p class="teamate__discription">UI Designer</p>
@@ -465,42 +574,42 @@
         <ul class="customers__list list-style">
           <li class="customers__item">
             <a class="icon"
-              ><svg class="customers__svg" width="170" height="92">
+              ><svg class="customers__svg">
                 <use href="./images/icons.svg#icon-client1"></use>
               </svg>
             </a>
           </li>
           <li class="customers__item">
             <a class="icon">
-              <svg class="customers__svg" width="170" height="92">
+              <svg class="customers__svg">
                 <use href="./images/icons.svg#icon-client2"></use>
               </svg>
             </a>
           </li>
           <li class="customers__item">
             <a class="icon">
-              <svg class="customers__svg" width="170" height="92">
+              <svg class="customers__svg">
                 <use href="./images/icons.svg#icon-client3"></use>
               </svg>
             </a>
           </li>
           <li class="customers__item">
             <a class="icon">
-              <svg class="customers__svg" width="170" height="92">
+              <svg class="customers__svg">
                 <use href="./images/icons.svg#icon-client4"></use>
               </svg>
             </a>
           </li>
           <li class="customers__item">
             <a class="icon">
-              <svg class="customers__svg" width="170" height="92">
+              <svg class="customers__svg">
                 <use href="./images/icons.svg#icon-client5"></use>
               </svg>
             </a>
           </li>
           <li class="customers__item">
             <a class="icon">
-              <svg class="customers__svg" width="170" height="92">
+              <svg class="customers__svg">
                 <use href="./images/icons.svg#icon-client6"></use>
               </svg>
             </a>
@@ -650,9 +759,14 @@
                       href="./images/icons.svg#icon-modal-phone"
                     ></use>
                   </svg>
-                  <input class="label-modal__input" type="tel" name="phone_number" id="" />
+                  <input
+                    class="label-modal__input"
+                    type="tel"
+                    name="phone_number"
+                    id=""
+                  />
                 </div>
-              </label class="label-modal">
+              </label>
             </li>
             <li class="form-modal__item">
               <label class="label-modal">
@@ -664,7 +778,12 @@
                     href="./images/icons.svg#icon-modal-email"
                   ></use>
                 </svg>
-                <input class="label-modal__input" type="email" name="email" id="" />
+                <input
+                  class="label-modal__input"
+                  type="email"
+                  name="email"
+                  id=""
+                />
               </label>
             </li>
             <li class="form-modal__item">
@@ -694,8 +813,11 @@
                   ></use>
                 </svg>
                 <span>
-                  Oświadczam iż akceptuję <a class="label-modal__link" href="#">Regulamin</a> i
-                  <a class="label-modal__link" href="#">Politykę Prywatności.</a>
+                  Oświadczam iż akceptuję
+                  <a class="label-modal__link" href="#">Regulamin</a> i
+                  <a class="label-modal__link" href="#"
+                    >Politykę Prywatności.</a
+                  >
                 </span>
               </label>
             </li>
@@ -707,5 +829,78 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+
+    <!-- MOBILE MENU -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-close-btn menu-toggle js-close-menu">
+        <svg
+          class="menu-close-btn__svg"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <div class="upper-half">
+        <nav>
+          <ul class="list-style mobile-navigation">
+            <li class="mobile-navigation__item">
+              <a
+                class="mobile-navigation__link mobile-navigation__link--color"
+                href="./index.html"
+                >Agencja</a
+              >
+            </li>
+            <li class="mobile-navigation__item">
+              <a class="mobile-navigation__link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-navigation__item">
+              <a class="mobile-navigation__link" href="#">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="lower-half">
+        <ul class="mobile-address list-style">
+          <li class="mobile-address__item">
+            <a class="address mobile-address__number" href="tel:+48111111111">
+              +48 111 111 111
+            </a>
+          </li>
+          <li class="mobile-address__item">
+            <a
+              class="address mobile-address__mail"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="menu-social">
+          <li class="menu-social__item">Instagram</li>
+          <li class="menu-social__item">Twitter</li>
+          <li class="menu-social__item">Facebook</li>
+          <li class="menu-social__item">LinkedIn</li>
+        </ul>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

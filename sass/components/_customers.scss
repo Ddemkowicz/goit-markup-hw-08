@@ -1,6 +1,7 @@
 .customers {
   text-align: center;
-
+  justify-content: center;
+  width: 450px;
   &__title {
     font-weight: 700;
     font-size: 36px;
@@ -12,6 +13,8 @@
     fill: #afb1b8;
     border-radius: 4px;
     outline: 1px solid #afb1b8;
+    width: 210px;
+    height: 92px;
   }
   &__svg:hover,
   &__svg:focus {
@@ -21,7 +24,34 @@
   }
   &__list {
     display: flex;
-    padding-left: 0;
-    justify-content: space-between;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    padding: 0 15px;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customers {
+    width: 738px;
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    &__svg {
+      width: 226px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers {
+    &__svg {
+      width: 170px;
+    }
+
+    &__list {
+      flex-wrap: nowrap;
+    }
   }
 }

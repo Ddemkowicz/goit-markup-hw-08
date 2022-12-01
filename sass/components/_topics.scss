@@ -1,19 +1,27 @@
 .topics {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
   &__list {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+
+    row-gap: 30px;
     letter-spacing: 0.03em;
   }
 
   &__item {
     margin: 0;
-    width: inherit;
+    justify-content: center;
   }
 
   &__svg {
+    justify-items: center;
     background-color: #f5f4fa;
     border-radius: 4px;
-    width: 270px;
+    width: 100%;
     height: 120px;
   }
 
@@ -21,7 +29,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    width: 270px;
+    text-align: center;
     margin-bottom: 10px;
     margin-top: 30px;
   }
@@ -31,6 +39,90 @@
     line-height: 1.71;
     color: #757575;
     letter-spacing: 0.03em;
-    width: 270px;
   }
 }
+@media screen and (min-width: 768px) {
+  .topics {
+    max-width: 768px;
+    display: flex;
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      // column-gap: 30px;
+      justify-content: space-between;
+    }
+
+    &__item {
+      width: 354px;
+      height: 251px;
+    }
+    &__svg {
+      width: 354px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .topics {
+    max-width: 1200px;
+    width: 1170px;
+    padding: 0;
+    &__list {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+    }
+
+    &__item {
+      width: inherit;
+    }
+
+    &__svg {
+      width: 270px;
+      height: 120px;
+    }
+
+    &__headline {
+      width: 270px;
+    }
+    &__discription {
+      width: 270px;
+    }
+  }
+}
+
+// .topics {
+//   &__list {
+//     display: flex;
+//     justify-content: space-between;
+//     letter-spacing: 0.03em;
+//   }
+
+//   &__item {
+//     margin: 0;
+//     width: inherit;
+//   }
+
+//   &__svg {
+//     background-color: #f5f4fa;
+//     border-radius: 4px;
+//     width: 270px;
+//     height: 120px;
+//   }
+
+//   &__headline {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     width: 270px;
+//     margin-bottom: 10px;
+//     margin-top: 30px;
+//   }
+//   &__discription {
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     color: #757575;
+//     letter-spacing: 0.03em;
+//     width: 270px;
+//   }
+// }

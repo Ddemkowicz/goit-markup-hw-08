@@ -1,0 +1,136 @@
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  &__svg:focus,
+  &__svg:hover {
+    fill: #2196f3;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #fff;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.is-open {
+  transform: translateX(0);
+}
+
+.menu-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 26px;
+  color: #000;
+  &__svg:focus,
+  &__svg:hover {
+    fill: #2196f3;
+  }
+}
+
+.upper-half {
+  position: absolute;
+  left: 40px;
+  top: 50px;
+}
+
+.mobile-navigation {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  &__item {
+    margin-bottom: 32px;
+  }
+  &__link {
+    text-decoration: none;
+    color: #212121;
+    &--color {
+      color: #2196f3;
+    }
+  }
+}
+
+.lower-half {
+  position: absolute;
+  left: 40px;
+  bottom: 50px;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.mobile-address {
+  margin-bottom: 65px;
+  &__item {
+    margin-bottom: 32px;
+  }
+  &__number {
+    font-size: 34px;
+    line-height: 40px;
+    color: #2196f3;
+  }
+  &__mail {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.menu-social {
+  list-style-type: none;
+  display: flex;
+  color: #2196f3;
+  position: relative;
+  left: -10px;
+
+  &__item {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0 10px;
+    &:not(:last-child) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+  .menu-container {
+    display: none;
+  }
+}
