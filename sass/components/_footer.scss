@@ -146,8 +146,12 @@
     right: 80px;
     margin-left: 160px;
   }
+  .form-newsletter {
+    &__input {
+      width: 450px;
+    }
+  }
 }
-
 @media screen and (min-width: 1200px) {
   .style-footer {
     display: flex;
