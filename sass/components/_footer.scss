@@ -130,7 +130,13 @@
     height: 30px;
   }
 }
-
+@media screen and (min-width: 480px) {
+  .form-newsletter {
+    &__input {
+      width: 450px;
+    }
+  }
+}
 @media screen and (min-width: 768px) {
   .footer {
     display: flex;
